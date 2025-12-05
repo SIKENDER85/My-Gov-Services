@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Gov Services</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<header>
+  <h1>MY GOV SERVICES</h1>
+  <p>Online Service Center Operator Portal</p>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search services...">
+    <button id="searchBtn">Search</button>
+  </div>
+</header>
+
+<main class="container" id="services">
+
+  <!-- Aadhaar Service -->
+  <div class="card aadhar">
+    <h2>Aadhaar Card Service</h2>
+    <ul>
+      <li><span>Aadhaar Card Download</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Check Aadhaar Status</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Order Aadhaar PVC Card</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Lock / Unlock Aadhaar</span> <a href="apply.html>OPEN</a></li>
+      <li><span>Verify Email / Mobile</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Find Lost Aadhar Number</span><a href="apply.html"c class="open-btn">open</a>
+    </ul>
+  </div>
+
+  <!-- Family ID Service -->
+  <div class="card family">
+    <h2>Family ID Service (PPP)</h2>
+    <ul>
+      <li><span>Family ID (PPP) Download</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Check Family ID Status</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Update Family Details</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Add New Family Member</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Remove Family Member</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Mobile Number Update</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>E-KYC Status</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+    </ul>
+  </div>
+
+  <!-- PAN Card Service -->
+  <div class="card pan">
+    <h2>PAN Card Service</h2>
+    <ul>
+      <li><span>Apply New PAN</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Download E-PAN</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>PAN Aadhaar Link</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Re-Order PAN</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>File Income Tax Return</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+    </ul>
+  </div>
+
+  <!-- Voter Card Service -->
+  <div class="card voter">
+    <h2>Voter Card Service</h2>
+    <ul>
+      <li><span>New Voter Registration</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Download Voter ID</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Find Lost Voter Number</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Voter Polling Station</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+      <li><span>Voter List Download</span> <a href="apply.html" class="open-btn">OPEN</a></li>
+    </ul>
+  </div>
+
+
+<footer>
+  <div class="image">
+    
+  </div>
+  <p>This portal gives quick access to important government services.</p>
+</footer>
+
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const searchBtn = document.getElementById("searchBtn");
+  const cards = document.querySelectorAll(".card");
+
+  function filterServices() {
+    const value = searchInput.value.toLowerCase().trim();
+    cards.forEach(card => {
+      const cardText = card.innerText.toLowerCase();
+      if (cardText.includes(value)) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  searchInput.addEventListener("keyup", filterServices);
+  searchBtn.addEventListener("click", filterServices);
+</script>
+
+</body>
+</html>
