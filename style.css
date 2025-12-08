@@ -84,12 +84,22 @@ header p {
   color: white;
   font-size: 18px;
 }
+.card-licence h2 {
+  margin: 0;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+}
 
 .card ul {
   list-style: none;
   flex-grow: 1;
 }
 
+.card-licence ul {
+  list-style: none;
+  flex-grow: 1;
+}
 .card ul li {
   display: flex;
   justify-content: space-between;
@@ -97,12 +107,26 @@ header p {
   padding: 12px 15px;
   border-bottom: 1px solid #eee;
 }
+.card-licence ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
 
 .card ul li span {
   flex: 1;
 }
+.card-licence ul li span {
+  flex: 1;
+}
 
 .card ul li:hover {
+  background: #fafafa;
+}
+.card-licence ul li:hover {
   background: #fafafa;
 }
 
@@ -124,7 +148,7 @@ header p {
 .family h2 { background: #9c27b0; }
 .pan    h2 { background: #4caf50; }
 .voter  h2 { background: #e91e63; }
-.licence h2{ background: #2196f3; }
+.card-licence h2{ background: #2196f3; }
 
 footer {
   background: #222;
