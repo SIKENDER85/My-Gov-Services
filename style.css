@@ -148,3 +148,83 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.ai-service-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f9ff;
+  font-family: Arial;
+}
+
+.ai-service-section h2 {
+  font-size: 30px;
+  color: #222;
+}
+
+.ai-service-section p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.service-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.service-card h3 {
+  text-align: center;
+  color: #0b63ff;
+  margin-bottom: 10px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-card ul li {
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.service-card b {
+  color: green;
+}
+
+.highlight {
+  margin-top: 10px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.service-card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #0b63ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.service-card button:hover {
+  background: #0849b8;
+}
+
+.note {
+  margin-top: 30px;
+  font-weight: bold;
+  color: red;
+  }
