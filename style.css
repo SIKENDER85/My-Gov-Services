@@ -118,11 +118,7 @@ header p {
 .family h2 { background: #9c27b0; }
 .pan    h2 { background: #4caf50; }
 .voter  h2 { background: #e91e63; }
-.vehicle h2{ background: #2196f3; }
-.samagra h2 { background:#3f51b5; }
-.bhulekh h2 { background:#607d8b; }
-.pmkisan h2 { background:#8bc34a; }
-.euparjan h2 { background:#795548; }
+.licence h2{ background: #2196f3; }
 
 footer {
   background: #222;
